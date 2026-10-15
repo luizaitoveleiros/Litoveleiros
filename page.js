@@ -12,23 +12,24 @@ export default function Home() {
 
   return (
     <main className="pagina">
-      <section className="cartao">
-        <h1>Litoveleiros</h1>
-        <p className="subtitulo">Digite um texto abaixo e clique em Analisar.</p>
+      <section className="card">
+        <h1>Seu texto, sua análise</h1>
+        <p className="subtitulo">
+          Digite um texto abaixo e clique em Analisar.
+        </p>
 
         <textarea
           className="campoTexto"
           value={texto}
           onChange={(event) => setTexto(event.target.value)}
           placeholder="Digite seu texto aqui..."
-          rows={6}
         />
 
-        <button className="botao" type="button" onClick={analisar}>
+        <button className="botao" onClick={analisar}>
           Analisar
         </button>
 
-        <div className="resposta" aria-live="polite">
+        <div className="resposta">
           {resposta}
         </div>
       </section>

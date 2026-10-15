@@ -2,7 +2,7 @@ import './styles.css';
 
 export const metadata = {
   title: 'Litoveleiros',
-  description: 'Projeto Next.js pronto para publicar na Vercel'
+  description: 'Projeto Next.js para análise de texto',
 };
 
 export default function RootLayout({ children }) {
